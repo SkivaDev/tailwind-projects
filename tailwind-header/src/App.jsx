@@ -3,18 +3,25 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-    <div class="shrink-0">
-      <img class="h-12 w-12" src="/src/assets/react.svg" alt="ChitChat Logo"/>
+    <div className='w-full h-14 bg-red-500'>
+      <div className='max-w-full h-14 flex justify-between px-10 items-center'>
+        <div className='w-8 h-8'>
+          <img className='w-full h-full' src="./assets/react.svg" alt="logo" />
+        </div>
+        <div className='flex gap-6 items-center'>
+          <button className='hover:text-white hover:cursor-pointer text-xl'>
+            Home
+          </button>
+          <button className='hover:text-white hover:cursor-pointer text-xl'>
+            Main
+          </button>
+          <button className='hover:text-white hover:cursor-pointer text-xl'>
+            Hello
+          </button>
+        </div>
+      </div>
     </div>
-    <div>
-      <div class="text-xl font-medium text-red-600">ChitChat</div>
-      <p class="text-slate-500">You have a new message!</p>
-    </div>
-  </div>
   )
 }
 
