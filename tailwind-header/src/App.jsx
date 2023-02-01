@@ -4,18 +4,15 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="h-screen">
-      <div className="relative h-4/5 block">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-sky-500 to-indigo-500 -skew-y-12 overflow-hidden origin-top-left -z-10"></div>
-        <div className="">
-          <div className="">
-            <h1>The best app you've ever seen</h1>
-            <p>You'll be blown away with all it does</p>
-            <button>Sign up</button>
-          </div>
-          <div className="">
-            <div className=""></div>
-          </div>
+    <div className="bg-yellow-100 h-screen w-screen flex justify-center items-center">
+      <div className="h-auto w-auto bg-white rounded-xl py-6 px-8 flex items-center gap-5 box-border">
+        <div className="h-14 w-14">
+          <div className="bg-[url('https://tailwindcss.com/img/erin-lindford.jpg')] w-full h-full bg-cover bg-no-repeat rounded-full" ></div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h2 className="text-black">Erin LindFord</h2>
+          <p className="text-neutral-600">Product Enginner</p>
+          <button className="text-violet-700 border rounded-lg hover:bg-violet-700 hover:text-white">Message</button>
         </div>
       </div>
     </div>
